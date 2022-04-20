@@ -1,0 +1,94 @@
+name: spark
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  firebase_auth: ^3.3.13
+  firebase_core: ^1.14.0
+  cloud_firestore: ^3.1.11
+  firebase_messaging: ^11.2.12
+  firebase_storage: ^10.2.11
+  font_awesome_flutter: ^10.1.0
+  loading_overlay: ^0.3.0
+  google_sign_in: ^5.0.5
+  #flutter_facebook_auth: ^3.5.7
+  intl: ^0.17.0
+  fluttericon: ^2.0.0
+  sqflite: ^2.0.2
+  open_file: ^3.2.1
+  fl_toast: ^3.1.0
+  page_transition: ^2.0.5
+  pinch_zoom: ^1.0.0
+  pfile_picker: ^3.1.4+2
+  image_picker: ^0.8.4+10
+  rflutter_alert: ^2.0.4
+  shared_preferences: ^2.0.13
+  video_thumbnail: ^0.5.0
+  emoji_picker_flutter: ^1.1.2
+  bubble: ^1.2.1
+  just_audio: ^0.9.7
+  percent_indicator: ^3.0.1
+  record: ^3.0.0
+  path_provider: ^2.0.9
+  dio: ^4.0.4
+  permission_handler: ^9.2.0
+  flutter_local_notifications: ^9.4.0
+  http: ^0.13.4
+  # agora_rtc_engine: ^5.0.1
+  jitsi_meet: ^4.0.0
+  status_view: ^0.0.2
+  story_viewer: ^0.1.0 
+  cached_network_image_builder: ^0.2.0
+  sliding_clipped_nav_bar: ^3.1.0
+  flutter_overboard: ^3.1.1
+  badges: ^2.0.2
+  image_watermark: ^0.0.3
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+ 
+  flutter_lints: ^1.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+ 
+
+ 
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf  
+        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
+
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+
