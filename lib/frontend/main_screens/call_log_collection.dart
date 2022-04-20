@@ -24,7 +24,10 @@ class _CallLogCollectionState extends State<CallLogCollection> {
   List<CallLog> _callDetails = [];
 
   TextEditingController _searchCallLogsController = TextEditingController();
-  //load previous  messages
+  
+  
+  
+  //load call logs from local
   void _getCallLogsFromLocal() async {
     try {
       if (mounted) {
