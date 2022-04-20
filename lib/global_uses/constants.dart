@@ -36,7 +36,7 @@ const Gradient kGradient = LinearGradient(
       Color.fromARGB(255, 129, 122, 249),
     ]);
 
-//
+//firestore field constants
 class FirestoreFieldConstants {
   final String about = "about";
   final String status = "status";
