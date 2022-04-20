@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -107,26 +106,26 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-//button to show user's password
-  Widget _showPassword() {
-    return obscureText
-        ? IconButton(
-            icon: const FaIcon(FontAwesomeIcons.solidEyeSlash,
-                color: kWhite, size: 14.0),
-            onPressed: () {
-              setState(() {
-                obscureText = false;
-              });
-            })
-        : IconButton(
-            icon: const FaIcon(FontAwesomeIcons.solidEye,
-                color: kWhite, size: 14.0),
-            onPressed: () {
-              setState(() {
-                obscureText = true;
-              });
-            });
-  }
+// //button to show user's password
+//   Widget _showPassword() {
+//     return obscureText
+//         ? IconButton(
+//             icon: const FaIcon(FontAwesomeIcons.solidEyeSlash,
+//                 color: kWhite, size: 14.0),
+//             onPressed: () {
+//               setState(() {
+//                 obscureText = false;
+//               });
+//             })
+//         : IconButton(
+//             icon: const FaIcon(FontAwesomeIcons.solidEye,
+//                 color: kWhite, size: 14.0),
+//             onPressed: () {
+//               setState(() {
+//                 obscureText = true;
+//               });
+//             });
+//   }
 
 //heading
   Widget _loginText() {
@@ -229,7 +228,7 @@ class _LoginPageState extends State<LoginPage> {
                 await _emailAndPasswordAuth.signInWithEmailAndPassword(
                     email: _email.text, password: _password.text);
 
-            //message to display on snackbar
+            //alert message to show
             String msg = '';
 
             //if email and password signin is complete
@@ -253,7 +252,7 @@ class _LoginPageState extends State<LoginPage> {
             //if email has not been verified
             else if (emailSignInResults ==
                 EmailSignInResults.emailNotVerified) {
-              msg = 'Email not verified \nPlease verify your email and log in';
+              msg = 'Email not verified \nPlease verify your email and retry';
             }
             //if email or password is incorrect
             else if (emailSignInResults ==
@@ -271,7 +270,6 @@ class _LoginPageState extends State<LoginPage> {
               Timer(const Duration(seconds: 2), () => Navigator.pop(context));
                //hides the keyboard
               SystemChannels.textInput.invokeMethod('TextInput.hide');
-              // ScaffoldMessenger.of(context).showSnackBar(snackBar(msg));
             }
           }
 
