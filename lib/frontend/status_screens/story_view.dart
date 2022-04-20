@@ -8,6 +8,7 @@ class StoryView extends StatelessWidget {
   final String username;
   final List<StoryItemModel> stories;
 
+  
   const StoryView(
       {required this.profilePic,
       required this.stories,
