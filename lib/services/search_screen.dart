@@ -322,6 +322,7 @@ class _SearchScreenState extends State<SearchScreen> {
     }
   }
 
+// search field
   Widget _search() {
     return TextField(
         maxLines: 1,
@@ -363,7 +364,7 @@ class _SearchScreenState extends State<SearchScreen> {
               maxHeight: 40.0,
             ),
             hintText: 'Search username...',
-            fillColor: const Color.fromARGB(26, 63, 2, 142),
+            fillColor: Color.fromARGB(26, 63, 2, 142),
             filled: true,
             focusColor: null,
             hintStyle:
