@@ -425,6 +425,20 @@ class LocalDatabase {
     }
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   Future<void> insertProfilePictureInImportant(
 //       {required String imagePath,
 //       required String imageUrl,
