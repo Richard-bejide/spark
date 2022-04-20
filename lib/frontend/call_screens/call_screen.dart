@@ -45,7 +45,6 @@ class _CallScreenState extends State<CallScreen> {
     final Stream<DocumentSnapshot<Map<String, dynamic>>>? realTimeSnapshot =
         await _cloudStoreDataManagement.callStream(
             connectionEmail: widget.call.callerId);
-    //check for changes
     realTimeSnapshot!.listen((documentSnapshot) async {
       await _checkingWhetherCallHasEnded(documentSnapshot.data());
     });
@@ -288,3 +287,4 @@ class _CallScreenState extends State<CallScreen> {
     debugPrint("_onError broadcasted: $error");
   }
 }
+
