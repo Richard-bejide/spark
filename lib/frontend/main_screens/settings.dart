@@ -18,12 +18,12 @@ class SettingsWindow extends StatefulWidget {
 
 class _SettingsWindowState extends State<SettingsWindow> {
   bool _isDarkMode = false;
-  LocalDatabase _localDatabase = LocalDatabase();
+  final LocalDatabase _localDatabase = LocalDatabase();
   String username = '';
   String? profilePic;
   String userMail = '';
 
-  //
+  //get current username, profile pic and usernamil from local
   void _getProfileDetailsFromLocal() async {
     final String? currentUserName = await _localDatabase.getUserNameForAnyUser(
         FirebaseAuth.instance.currentUser!.email.toString());
