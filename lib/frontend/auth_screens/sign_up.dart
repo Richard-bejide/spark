@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -62,7 +61,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
 //Methods
 
-// some common textFormFields
+// common textFormField
   Widget _commonTextFormField(
       {required String hintText,
       required String labelText,
