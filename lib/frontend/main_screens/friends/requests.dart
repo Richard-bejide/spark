@@ -5,7 +5,6 @@ import 'package:spark/backend/firebase/online_database_management/cloud_data_man
 import 'package:spark/global_uses/constants.dart';
 import 'package:spark/global_uses/enum_generation.dart';
 import 'package:spark/models/request_model.dart';
-import 'package:spark/models/search.dart';
 
 class RequestScreen extends StatefulWidget {
   final List<RequestModel> requestList;
