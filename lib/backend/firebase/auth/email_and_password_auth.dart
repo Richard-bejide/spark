@@ -53,7 +53,7 @@ class EmailAndPasswordAuth {
     }
   }
 
-  //log out user
+  //log user out of their acct
   Future<bool> logOut() async {
     try {
       await FirebaseAuth.instance.signOut();
