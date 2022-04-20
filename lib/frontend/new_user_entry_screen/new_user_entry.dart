@@ -39,7 +39,6 @@ class _TakePrimaryUserDataState extends State<TakePrimaryUserData> {
 
   @override
   Widget build(BuildContext context) {
-    final Size _size = MediaQuery.of(context).size; // take screen size
      return Scaffold(
         backgroundColor: kWhite,
         body: LoadingOverlay(
