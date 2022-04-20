@@ -63,7 +63,8 @@ void main() async {
   ));
 }
 
-// //initialize notification
+
+// //initialize notification for new messages
 // Future<void> initializeNotification() async {
 //   await FirebaseMessaging.instance.subscribeToTopic("Spark");
 
