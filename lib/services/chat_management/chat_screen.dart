@@ -293,7 +293,7 @@ class _ChatScreenState extends State<ChatScreen> {
         });
       }
     } catch (e) {
-      print("Error in Store And Show Message: ${e.toString()}");
+      print("Error: _storeAndShowIncomingMediaMessageData: ${e.toString()}");
     } finally {
       if (mounted) {
         setState(() {
