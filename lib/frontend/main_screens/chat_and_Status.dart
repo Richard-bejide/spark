@@ -176,8 +176,6 @@ class _ChatAndStatusScreenState extends State<ChatAndStatusScreen> {
                     }
                   }
 
-                  print(
-                      'connection status data:$_usernameData , $_connectionPicData, $stories');
                 }
               }
             }
@@ -205,12 +203,10 @@ class _ChatAndStatusScreenState extends State<ChatAndStatusScreen> {
                 stories: stories);
           });
         }
-        //     }
-        //   }
-        // }
+  
       }
     } catch (e) {
-      print('error in getting last messages and status ${e.toString()}');
+      print('error in getting last sent message and status from firestore ${e.toString()}');
     }
   }
 
