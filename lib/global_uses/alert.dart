@@ -34,15 +34,3 @@ Future<bool?> alert(
                 color: kWhite,
               )))).show();
 }
-
-
-
-// SnackBar snackBa(msg) {
-//   return SnackBar(
-//     backgroundColor: kWhite,
-//     content: Text(
-//       msg,
-//       style: const TextStyle(color: kPrimaryAppColor),
-//     ),
-//   );
-// }
