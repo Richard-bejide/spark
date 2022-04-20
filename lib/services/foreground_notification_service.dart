@@ -11,7 +11,7 @@ class ForegroundNotificationService {
     final InitializationSettings _initializationSettings =
         InitializationSettings(android: _androidInitializationSettings);
 
-    print("Foregroung notification constructor");
+    print("Foreground notification constructor");
     
     initAll(_initializationSettings);
   }
