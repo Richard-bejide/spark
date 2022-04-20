@@ -187,9 +187,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   leading: Icons.mail, title: 'email', subtitle: userMail),
               otherInformation(
                   leading: Icons.timeline,
-                  title: 'Account creation date & time',
+                  title: 'Account creation date',
                   subtitle:
-                      '$acctCreationDate, ${acctCreationTime == null.toString() ? '' : acctCreationTime}'),
+                      acctCreationDate),
               const SizedBox(height: 10.0),
               _deleteAccountButton(context),
             ],
