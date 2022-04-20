@@ -23,25 +23,25 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
     const SettingsWindow(),
   ];
 
-  //to check if user is online or not
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    super.didChangeAppLifecycleState(state);
+  // //to check if user is online or not
+  // @override
+  // void didChangeAppLifecycleState(AppLifecycleState state) {
+  //   super.didChangeAppLifecycleState(state);
 
-    final isBg = state == AppLifecycleState.paused;
-    final isClosed = state == AppLifecycleState.detached;
-    final isScreen = state == AppLifecycleState.resumed;
+  //   final isBg = state == AppLifecycleState.paused;
+  //   final isClosed = state == AppLifecycleState.detached;
+  //   final isScreen = state == AppLifecycleState.resumed;
 
-    isBg || isScreen == true || isClosed == false
-        ? setState(() {
-            // SET ONLINE
+  //   isBg || isScreen == true || isClosed == false
+  //       ? setState(() {
+  //           // SET ONLINE
           
-          })
-        : setState(() {
-            //SET  OFFLINE
+  //         })
+  //       : setState(() {
+  //           //SET  OFFLINE
           
-          });
-  }
+  //         });
+  // }
 
   @override
   void initState() {  
