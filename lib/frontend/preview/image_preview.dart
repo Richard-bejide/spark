@@ -8,7 +8,7 @@ class ImageViewScreen extends StatefulWidget {
   final ImageProviderCategory imageProviderCategory;
   final String imagePath;
 
-  ImageViewScreen(
+  const ImageViewScreen(
       {Key? key, required this.imageProviderCategory, required this.imagePath})
       : super(key: key);
   @override
