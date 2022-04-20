@@ -39,9 +39,13 @@ buttonNameOnly,
 buttonBorderColor }
 
 enum OtherConnectionStatus {
+  // ignore: constant_identifier_names
   request_pending,
+  // ignore: constant_identifier_names
   request_accepted,
+  // ignore: constant_identifier_names
   invitation_came,
+  // ignore: constant_identifier_names
   invitation_accepted,
   
 }
