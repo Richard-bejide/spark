@@ -23,7 +23,7 @@ class _CallLogCollectionState extends State<CallLogCollection> {
   //connections that have been called
   List<CallLog> _callDetails = [];
 
-  TextEditingController _seachCallLogsController = TextEditingController();
+  TextEditingController _searchCallLogsController = TextEditingController();
   //load previous  messages
   void _getCallLogsFromLocal() async {
     try {
@@ -204,7 +204,7 @@ class _CallLogCollectionState extends State<CallLogCollection> {
           borderRadius: BorderRadius.all(Radius.circular(30.0))),
       child: TextField(
           maxLines: 1,
-          controller: _seachCallLogsController,
+          controller: _searchCallLogsController,
           style: const TextStyle(
               color: kBlack, letterSpacing: 1.0, fontSize: 16.0),
           decoration: InputDecoration(
