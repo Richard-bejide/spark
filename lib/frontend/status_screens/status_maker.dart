@@ -7,7 +7,7 @@ import 'package:loading_overlay/loading_overlay.dart';
 import 'package:spark/backend/firebase/online_database_management/cloud_data_management.dart';
 import 'package:spark/backend/sqlite_management/local_database_management.dart';
 import 'package:spark/global_uses/constants.dart';
-// import 'package:story_maker/story_maker.dart';
+
 
 class StatusMaker extends StatefulWidget {
   final XFile pickedImage;
