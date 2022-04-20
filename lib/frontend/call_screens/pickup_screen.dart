@@ -41,7 +41,7 @@ class _PickupScreenState extends State<PickupScreen> {
     });
   }
 
-  /// check if call has been cancelled
+  // detect whether call has been cancelled
   Future<void> _checkingWhetherCallHasEnded(Map<String, dynamic>? docs) async {
     try {
       if (mounted) {
