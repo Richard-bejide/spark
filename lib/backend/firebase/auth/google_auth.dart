@@ -19,6 +19,7 @@ class GoogleAuthentication {
         } else {
           final GoogleSignInAuthentication _googleSignInAuthentication =
               await _googleSignInAccount.authentication;
+              //Create a new [GoogleAuthCredential] from a provided [accessToken].
           final OAuthCredential _oAuthCredential =
               GoogleAuthProvider.credential(
                   accessToken: _googleSignInAuthentication.accessToken,
