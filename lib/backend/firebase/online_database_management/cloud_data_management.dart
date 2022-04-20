@@ -99,7 +99,7 @@ class CloudStoreDataManagement {
 
       return importantData;
     } catch (e) {
-      //print('error in getting token from cloud firestore: ${e.toString()}');
+      print('error in getting token from cloud firestore: ${e.toString()}');
       return {};
     }
   }
@@ -127,7 +127,7 @@ class CloudStoreDataManagement {
       // print(_usersDataCollection);
       return _usersDataCollection;
     } catch (e) {
-      // print('Error in getting All Users List: ${e.toString()}');
+      print('Error in getting All Users List: ${e.toString()}');
       return [];
     }
   }
@@ -388,15 +388,16 @@ class CloudStoreDataManagement {
     try {
       Map<String, dynamic> callMap = Call.toMap(call);
 
-      
-     final DocumentSnapshot<Map<String, dynamic>> documentSnapshot = await FirebaseFirestore.instance
-          .doc('$_collectionName/$currentUserEmail').get();
-       
-        final Map<String, dynamic>? currentUserData = documentSnapshot.data();
+      final DocumentSnapshot<Map<String, dynamic>> documentSnapshot =
+          await FirebaseFirestore.instance
+              .doc('$_collectionName/$currentUserEmail')
+              .get();
+
+      final Map<String, dynamic>? currentUserData = documentSnapshot.data();
 
       currentUserData![FirestoreFieldConstants().call] = callMap;
-       
-       await FirebaseFirestore.instance
+
+      await FirebaseFirestore.instance
           .doc("$_collectionName/$currentUserEmail")
           .update({
         FirestoreFieldConstants().call:
@@ -498,7 +499,7 @@ class CloudStoreDataManagement {
     }
   }
 
- //change user online status
+  //change user online status
   Future<void> changeUserOnlineStatus({required String status}) async {
     try {
       final String? currentUserEmail = FirebaseAuth.instance.currentUser!.email;
@@ -515,8 +516,7 @@ class CloudStoreDataManagement {
       await FirebaseFirestore.instance
           .doc("$_collectionName/$currentUserEmail")
           .update({
-       'online_status':
-            currentUserData['online_status'],
+        'online_status': currentUserData['online_status'],
       }).whenComplete(() async {
         print('user online Status has been changed');
       });
@@ -524,5 +524,4 @@ class CloudStoreDataManagement {
       print('error in changing user online status : ${e.toString()}');
     }
   }
-
 }
