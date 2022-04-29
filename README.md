@@ -13,7 +13,7 @@
 </ul>
 
 <h2>Screenshots </h2>
- <img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot1.png" height= "450" width="300"></img>    <img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot2.png" height= "450" width="300"></img>
+<img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot1.png" height= "450" width="300"></img>     <img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot2.png" height= "450" width="300"></img>
 
 <img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot3.png" height= "450" width="300"></img>     <img src="https://github.com/Richard-bejide/spark/blob/main/screenshots/Screenshot4.png" height= "450" width="300"></img>
 
