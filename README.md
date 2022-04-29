@@ -1,5 +1,5 @@
 <h1> spark</h1>
-<h2> A fullstack chat app built with flutter+firebase with video/audio call and a lot of other cool features </h2>
+<h2> A fullstack chat app built with flutter+firebase </h2>
 
 <h1>Features</h1>
 <ul>
@@ -13,5 +13,5 @@
 </ul>
 
 #Screenshots 
-
+ <img src="![Screenshot_20220429-191046](https://user-images.githubusercontent.com/54414963/166002497-7c4e1cb2-31bd-417b-85d9-7c7ca8b05fde.png)" height= "450" width="300"></img>
 
