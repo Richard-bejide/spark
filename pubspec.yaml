@@ -46,7 +46,6 @@ dependencies:
   permission_handler: ^9.2.0
   flutter_local_notifications: ^9.4.0
   http: ^0.13.4
-  # agora_rtc_engine: ^5.0.1
   jitsi_meet: ^4.0.0
   status_view: ^0.0.2
   story_viewer: ^0.1.0 
