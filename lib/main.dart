@@ -20,7 +20,7 @@ void main() async {
    const SystemUiOverlayStyle(
      statusBarColor: Colors.transparent,
     statusBarIconBrightness: Brightness.dark,
-  // systemStatusBarContrastEnforced: false,
+  systemStatusBarContrastEnforced: false,
     //statusBarBrightness: Brightness.dark
     )
   );
